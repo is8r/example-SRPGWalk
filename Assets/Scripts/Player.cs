@@ -10,9 +10,6 @@ public class Player : MonoBehaviour
     //3Dモデル
     public GameObject model;
 
-    //前のフレームでの位置
-    Vector3 prev;
-
     //キー操作をチェックする
     void Update()
     {
@@ -34,7 +31,6 @@ public class Player : MonoBehaviour
         {
             Move(setting.GetMove(KeyCode.RightArrow));
         }
-
     }
 
     //可能なら移動する
